@@ -18,7 +18,7 @@ f = File.open(File.expand_path('/home/usename/Documents/ruby/file_count/File_typ
     file_extensions.each do |extension|
     
         subset_files = Dir["**/" + "*." + extension]
-        hidden_files = Dir["/home/johnb/\.[a-z]*/**/" + "*." + extension]
+        hidden_files = Dir["/home/username/\.[a-z]*/**/" + "*." + extension]
         subset_files = subset_files.concat(hidden_files)
         f.puts "* Number of " + "." +  extension + " files found: " + subset_files.length.to_s + "\n" 
     end
